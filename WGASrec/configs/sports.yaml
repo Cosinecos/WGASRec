@@ -1,0 +1,20 @@
+dataset:
+  name: amazon_sports
+  max_len: 100
+model:
+  hidden_size: 128
+  num_layers: 2
+  dropout: 0.2
+  decomp_level: 2
+  gate_tau: 1.0
+  Lg: 2
+  K: 2
+  boundary_tokens_per_end: 4
+train:
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 256
+  epochs: 200
+  patience: 10
+  num_workers: 0
+seed: 42
